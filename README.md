@@ -2,7 +2,7 @@
 (deliberately inefficient) Monkey Simulator
 
 ## Authors
-@adpoe - Anthony Poerio (adp59@pitt.ed)  
+@adpoe - Anthony Poerio (adp59@pitt.edu)  
 @brandhonhedges82 - Brandon Hedges (bjh6@pitt.edu)
 
 ## Made for
