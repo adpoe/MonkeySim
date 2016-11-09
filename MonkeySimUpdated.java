@@ -55,7 +55,8 @@ public class MonkeySimUpdated {
      */
 
      public static MonkeyUpdated getFirstMonkey(List<MonkeyUpdated> ml) {
-     if (ml.size() > 0) {
+     if (ml.size() >= 0) 
+     {
          return ml.get(1);
      }
      /*int x = ml.size() - 1;
