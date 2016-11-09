@@ -1,7 +1,6 @@
 /**
- * Brandon Hedges
+ * Brandon Hedges/ Tony Poerio
  * Software Quality Assurance 
- * Deliverable 3
  */
 
 
@@ -15,8 +14,9 @@ public class MonkeyTester
 	/**
 	 * Test goal - To ensure that the monkey classes's generateId method 
 	 * has the same output before and after performance modification.
-	 * This test uses an input of 0 into generateID and compares 
-	 * it's output to the same input in the updated method.
+	 * 
+	 * This test uses an input of 0 into generateID and
+	 * asserts that the optimized method has the same output as the original.
 	 */
 	@Test
 	public void monkeyIDPinningTest0() 
@@ -33,8 +33,9 @@ public class MonkeyTester
 	/**
 	 * Test goal - To ensure that the monkey classes's generateId method 
 	 * has the same output before and after performance modification.
-	 * This test uses an input of -1(To test negative input) into generateID and compares 
-	 * it's output to the same input in the updated method.
+	 * 
+	 * This test uses an input of -1(To test negative input) into generateID 
+	 * and asserts that the optimized method has the same output as the original.
 	 */
 	@Test
 	public void monkeyIDPinningTestNeg() 
@@ -51,8 +52,9 @@ public class MonkeyTester
 	/**
 	 * Test goal - To ensure that the monkey classes's generateId method 
 	 * has the same output before and after performance modification.
-	 * This test uses an input of 100(To test normal input that is not an edge case) into generateID and compares 
-	 * it's output to the same input in the updated method.
+	 * 
+	 * This test uses an input of 100(To test normal input that is not an edge case) into generateID 
+	 * and asserts that the optimized method has the same output as the original.
 	 */
 	@Test
 	public void monkeyIDPinningTestNormal() 
@@ -69,8 +71,9 @@ public class MonkeyTester
 	/**
 	 * Test goal - To ensure that the monkey classes's generateId method 
 	 * has the same output before and after performance modification.
-	 * This test uses an input of MaxInt(To test the maximum possible integer input) into generateID and compares 
-	 * it's output to the same input in the updated method.
+	 * 
+	 * This test uses an input of MaxInt(To test the maximum possible integer input) into generateID 
+	 * and asserts that the optimized method has the same output as the original.
 	 */
 	@Test
 	public void monkeyIDPinningTestMax() 
@@ -87,8 +90,9 @@ public class MonkeyTester
 	/**
 	 * Test goal - To ensure that the monkey classes's generateId method 
 	 * has the same output before and after performance modification.
-	 * This test uses an input of MinInt(To test the minimum possible integer input) into generateID and compares 
-	 * it's output to the same input in the updated method.
+	 * 
+	 * This test uses an input of MinInt(To test the minimum possible integer input) into generateID and
+	 * asserts that the optimized method has the same output as the original.
 	 */
 	@Test
 	public void monkeyIDPinningTestMin() 
@@ -105,10 +109,20 @@ public class MonkeyTester
 
 	
 	/**
-	 * Pinning test stringify with 100
+	 * Test goal - To ensure that the MonkeySim classes's stringify method 
+	 * has the same output before and after performance modification.
+	 * 
+	 * This test uses an int input of 0(To test the functionality at zero) 
+	 * and creates two monkeys with the original Monkey class and
+	 * passes them to the original stringify method with that int value.
+	 *
+	 * It then creates two Monkeys from the updated Monkey class
+	 * and passes them to the newly optimized strigify method, with 
+	 * the same int value and asserts that the old and new 
+	 * method have the same output.
 	 */
 	@Test
-	public void stringifyResultsPinningTestZero() 
+	public void stringifyResultsPinningTestZero()
 	{	
 		Monkey oldMonkey = new Monkey();
 		Monkey oldMonkey2 = new Monkey();
@@ -123,7 +137,17 @@ public class MonkeyTester
 	}
 	
 	/**
-	 * Pinning test stringify with neg
+	 * Test goal - To ensure that the MonkeySim classes's stringify method 
+	 * has the same output before and after performance modification.
+	 * 
+	 * This test uses an int input of -1(To test the functionality of negative numbers) 
+	 * and creates two monkeys with the original Monkey class and
+	 * passes them to the original stringify method with that int value.
+	 *
+	 * It then creates two Monkeys from the updated Monkey class
+	 * and passes them to the newly optimized strigify method, with 
+	 * the same int value and asserts that the old and new 
+	 * method have the same output.
 	 */
 	@Test
 	public void stringifyResultsPinningTestNeg() 
@@ -141,7 +165,17 @@ public class MonkeyTester
 	}
 	
 	/**
-	 * Pinning test stringify with 100
+	 * Test goal - To ensure that the MonkeySim classes's stringify method 
+	 * has the same output before and after performance modification.
+	 * 
+	 * This test uses an int input of 100(To test the functionality of normal no boundary integers) 
+	 * and creates two monkeys with the original Monkey class and
+	 * passes them to the original stringify method with that int value.
+	 *
+	 * It then creates two Monkeys from the updated Monkey class
+	 * and passes them to the newly optimized strigify method, with 
+	 * the same int value and asserts that the old and new 
+	 * method have the same output.
 	 */
 	@Test
 	public void stringifyResultsPinningTestNormal() 
@@ -159,7 +193,17 @@ public class MonkeyTester
 	}
 	
 	/**
-	 * Pinning test stringify with Max int
+	 * Test goal - To ensure that the MonkeySim classes's stringify method 
+	 * has the same output before and after performance modification.
+	 * 
+	 * This test uses an int input of MaxInt(To test the functionality at MaxInt) 
+	 * and creates two monkeys with the original Monkey class and
+	 * passes them to the original stringify method with that int value.
+	 *
+	 * It then creates two Monkeys from the updated Monkey class
+	 * and passes them to the newly optimized strigify method, with 
+	 * the same int value and asserts that the old and new 
+	 * method have the same output.
 	 */
 	@Test
 	public void stringifyResultsPinningTestMax() 
@@ -177,7 +221,17 @@ public class MonkeyTester
 	}
 	
 	/**
-	 * Pinning test stringify with Min int
+	 * Test goal - To ensure that the MonkeySim classes's stringify method 
+	 * has the same output before and after performance modification.
+	 * 
+	 * This test uses an int input of MinInt(To test the functionality at MinInt) 
+	 * and creates two monkeys with the original Monkey class and
+	 * passes them to the original stringify method with that int value.
+	 *
+	 * It then creates two Monkeys from the updated Monkey class
+	 * and passes them to the newly optimized strigify method, with 
+	 * the same int value and asserts that the old and new 
+	 * method have the same output.
 	 */
 	@Test
 	public void stringifyResultsPinningTestMin() 
