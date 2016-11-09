@@ -20,14 +20,14 @@ From there, please run:
 
 You will then see the timed output of our updated version of MonkeySim.
 
-The methods updated were:
+The methods updated were:  
 1. Monkey.generateId()  
 2. MonkeySim.stringifyResults()  
 3. MonkeySim.getFirstMonkey()  
 
 By checking code for each of these methods, within the UPDATED folder, you will see our revisions.
 
-After our updates, we were able to run the MonkeySim with seed value 23 in about 1/10th of a second.
+**After our updates, we were able to run the MonkeySim with seed value 23 in about 1/10th of a second.**
 
 ## To Grade the Test Suite
 To simplify grading the test suite, we created a separate folder that contained all necessary items to state and dependencies (including .jar files)
