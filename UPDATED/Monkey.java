@@ -84,24 +84,11 @@ public class Monkey {
      * @param n - monkey number
      * @return int - id for this monkey
      */
-    // this is most likely highly inefficient... using atan and sin... ughh
-    // and what's the deal with this bir thing?
-    // it does 1000 iterations!!! to generate an id... each monkey can just GET an ID equal to its integer number!!
-    // l.o.l.
     public int generateId(int n) {
-        // start at 0 = 223492
+        // This method was refactored from a long mathematical function with many loops
+        // into a much shorter equivalent statement.
+        // We start our ID #'s at 0 = 223492
         int toReturn = 223492;
-        /*int toReturn = 100;
-        int bird = -900;
-        for (int l=0; l <1000; l++) {
-            for (int m = 0; m < 100; m++) {
-                bird += Math.round(Math.atan(l + m));
-                bird -= Math.round(Math.sin(m * m)) * Math.exp(m * m);
-                toReturn += bird;
-            }
-        }
-        toReturn += 10;
-        toReturn += n;*/
         return toReturn + n;
     }
 
