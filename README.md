@@ -33,10 +33,21 @@ By checking code for each of these methods, within the UPDATED folder, you will 
 To simplify grading the test suite, we created a separate folder that contained all necessary items to state and dependencies (including .jar files)
 
 Steps to grade are:
-* CD into the directory marked "**TEST_SUIT**"
+* CD into the directory marked "**TEST_SUITE**"
 * Run the following shell script: `sh compileThenRun.sh`
 
 The compileThenRun.sh shell script will first compile our tests with all .jar dependencies, and then it will run our TestRunner and display final output.
+
+**The testing code is found in the file named:**
+`/TEST_SUITE/MonkeyTester.java`
+
+The test runner is found at:
+`/TEST_SUITE/TestRunner.java`
+
+The rest of the files in this folder are dependencies necessary for testing.
+
+We did duplicate some of the files, but this decision was made for clarity, and to make grading easier. Thank you.
+
 
 
 ## Original Version

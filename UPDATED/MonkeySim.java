@@ -159,10 +159,6 @@ public class MonkeySim {
      */
 
     public static void main(String[] args) {
-        // manual override
-        //String [] args = new String[1];
-        //args[0] = "23";
-
         int s = getStartingMonkeyNum(args);
         Monkey tmpMonkey;
         Banana b = new Banana();
